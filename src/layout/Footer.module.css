@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.copyright {
+  color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 70%;
+}
+.btnInfo {
+  height: 36px;
+  width: 36px;
+  background: url("../images/about.png");
+  background-position: center;
+  background-size: cover;
+  border: none;
+}
+.btnInfo:hover {
+  background: url("../images/about.png");
+  background-position: center;
+  background-size: cover;
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.ref {
+  padding-top: 4px;
+}
+.img {
+  height: 36px;
+}
+.img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem white;
+  border-radius: 4px;
+}

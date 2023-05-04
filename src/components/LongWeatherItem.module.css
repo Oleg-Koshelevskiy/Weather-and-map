@@ -1,0 +1,18 @@
+.item {
+  color: white;
+  background-color: rgba(56, 96, 145, 0.411);
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  margin: 0.25rem;
+}
+.img {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (max-width: 500px) {
+  .item {
+    font-size: 0.8rem;
+  }
+}

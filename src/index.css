@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+body {
+  background: url("./images/background.jpg") no-repeat center center fixed;   
+  font-family: "Roboto", sans-serif;  
+  background-size: cover;
+  box-sizing: border-box;  
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue rgba(255, 166, 0, 0.5);
+}
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 221, 0, 0.5);
+  border-radius: 20px;
+  border: 1px solid orange;
+}

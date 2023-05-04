@@ -1,0 +1,23 @@
+.seasonWinter {
+  background: url("../images/winter.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
+
+.seasonSpring {
+  background-image: url("../images/spring.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.seasonSummer {
+  background-image: url("../images/summer.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.seasonAutumn {
+  background-image: url("../images/autumn.jpg");
+  background-position: center;
+  background-size: cover;
+}

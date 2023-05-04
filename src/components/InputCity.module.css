@@ -1,0 +1,88 @@
+.component {
+  background-image: url("../images/input-background.jpg");
+  background-position: bottom;
+  background-size: cover;
+  max-width: 582px;
+  padding: 1.9rem 1rem;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input {
+  color: rgb(95, 56, 34);
+  font-weight: bold;
+  background-color: rgb(255, 234, 206);
+  padding: 0.5rem 1rem;
+  width: 8rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  border: 1px rgb(255, 115, 0) solid;
+}
+
+.input:focus {
+  background-color: rgb(253, 253, 219);
+  outline: none;
+}
+
+.gps {
+  height: 2rem;
+  width: 2rem;
+  background: center / contain no-repeat url("../images/gps.png"),
+    rgb(255, 255, 255);
+  border: 1px rgb(255, 115, 0) solid;
+  border-radius: 0.5rem;
+}
+
+.gps:focus,
+.gps:hover {
+  transform: scale(1.2);
+  background: center / contain no-repeat url("../images/gps.png"),
+    rgb(134, 205, 252);
+  cursor: pointer;
+}
+
+.city {
+  color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin: 1rem 0 0.5rem 0;
+  padding: 0 0.5rem;
+}
+.useDefault {
+  background-color: rgb(17, 146, 36);
+}
+.clearDefault {
+  background-color: rgba(167, 100, 1, 0.616);
+}
+.city:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 430px) {
+  .component {
+    background-color: #9d9d9d;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  .form {
+    margin: 0.25rem;
+  }
+  .input {
+    width: 6rem;
+    margin: 0.25rem;
+  }
+  .city {
+    font-size: 0.8rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    margin: 0.5rem 0 0.25rem 0;
+    padding: 0 0.25rem;
+  }
+}
