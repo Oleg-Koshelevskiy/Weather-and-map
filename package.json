@@ -2,7 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {    
+  "dependencies": {
     "apicache": "^1.6.3",
     "axios": "^1.4.0",
     "cors": "^2.8.5",
@@ -47,6 +47,7 @@
   "devDependencies": {
     "eslint": "^8.24.0",
     "eslint-plugin-react": "^7.31.8",
+    "netlify-cli": "^14.4.0",
     "nodemon": "^2.0.22",
     "prettier": "2.8.0"
   }

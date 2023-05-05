@@ -211,7 +211,7 @@ const AppContextProvider = (props) => {
   const getCityCoords = (cityName) => {
     dispatchContext({ type: "LOAD-ON" });
 
-    fetch(`http://localhost:8000/location?city=${cityName}`)
+    fetch(`http://localhost:9999/.netlify/functions/location/?city=${cityName}`)
       .then((response1) => response1.json())
       .then((data) => {
         let cityLocalName;
