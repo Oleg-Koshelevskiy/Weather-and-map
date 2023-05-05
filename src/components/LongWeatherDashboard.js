@@ -7,18 +7,21 @@ import seasonStyles from "./Seasons.module.css";
 
 const LongWeatherDashboard = (props) => {
   const context = useContext(AppContext);
+  const forecast = context.longWeatherData
+
+  console.log(forecast)
 
   if (!context.showWeather) {
     return <CityNotChosen />;
   }
 
-  const item = context.longWeatherData.map((item) => (
+  const items = forecast.map((item) => (
     <LongWeatherItem item={item} key={Math.random()} />
   ));
 
   return (
     <div className={`${styles.dashboard} ${seasonStyles[props.season]}`}>
-      {item}
+      {items}
     </div>
   );
 };

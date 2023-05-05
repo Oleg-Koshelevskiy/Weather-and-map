@@ -8,7 +8,7 @@ const CurrentWeatherDashboard = (props) => {
   const context = useContext(AppContext);
   const ctx = context.languagePack[1];
   const now = context.currentWeatherData;
-
+  
   if (!context.showWeather) {
     return <CityNotChosen />;
   }

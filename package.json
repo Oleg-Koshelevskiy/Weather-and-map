@@ -48,6 +48,7 @@
     "eslint": "^8.24.0",
     "eslint-plugin-react": "^7.31.8",
     "netlify-cli": "^14.4.0",
+    "node-fetch": "^3.3.1",
     "nodemon": "^2.0.22",
     "prettier": "2.8.0"
   }
