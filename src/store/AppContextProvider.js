@@ -211,7 +211,7 @@ const AppContextProvider = (props) => {
   const getCityCoords = async (cityName) => {
     dispatchContext({ type: "LOAD-ON" });
 
-    fetch(`http://localhost:8888/.netlify/functions/location/?city=${cityName}`)
+    fetch(`/.netlify/functions/location/?city=${cityName}`)
       .then((response1) => response1.json())
       .then((data) => {
         console.log(data);
@@ -314,9 +314,7 @@ const AppContextProvider = (props) => {
 
     const lang = contextState.lang[1].fetchLang;
 
-    fetch(
-      `http://localhost:8888/.netlify/functions/weather/?lat=${lat}&lon=${lon}&lang=${lang}`
-    )
+    fetch(`/.netlify/functions/weather/?lat=${lat}&lon=${lon}&lang=${lang}`)
       .then((res) => res.json())
       .then((data) => {
         // console.log(data)
@@ -331,9 +329,7 @@ const AppContextProvider = (props) => {
         dispatchContext({ type: "LOAD-OFF" });
       });
 
-    fetch(
-      `http://localhost:8888/.netlify/functions/forecast/?lat=${lat}&lon=${lon}&lang=${lang}`
-    )
+    fetch(`/.netlify/functions/forecast/?lat=${lat}&lon=${lon}&lang=${lang}`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
