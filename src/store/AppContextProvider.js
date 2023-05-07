@@ -214,7 +214,6 @@ const AppContextProvider = (props) => {
     fetch(`/.netlify/functions/location/?city=${cityName}`)
       .then((response1) => response1.json())
       .then((data) => {
-        console.log(data);
         let cityLocalName;
         if (contextState.lang[0] === "ukr") {
           cityLocalName = data[0].local_names.uk;
@@ -317,7 +316,6 @@ const AppContextProvider = (props) => {
     fetch(`/.netlify/functions/weather/?lat=${lat}&lon=${lon}&lang=${lang}`)
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data)
         dispatchContext({
           type: "CURRENT-WEATHER",
           currentWeatherData: data,
@@ -332,7 +330,6 @@ const AppContextProvider = (props) => {
     fetch(`/.netlify/functions/forecast/?lat=${lat}&lon=${lon}&lang=${lang}`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         dispatchContext({
           type: "LONG-WEATHER",
           longWeatherData: data.list,

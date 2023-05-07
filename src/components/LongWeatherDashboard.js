@@ -7,9 +7,7 @@ import seasonStyles from "./Seasons.module.css";
 
 const LongWeatherDashboard = (props) => {
   const context = useContext(AppContext);
-  const forecast = context.longWeatherData
-
-  console.log(forecast)
+  const forecast = context.longWeatherData;
 
   if (!context.showWeather) {
     return <CityNotChosen />;
