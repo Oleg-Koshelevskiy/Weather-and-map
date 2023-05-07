@@ -1,7 +1,6 @@
 {
   "name": "weather-app",
   "version": "0.1.0",
-  "homepage": "https://weather-and-map.netlify.app/",
   "private": true,
   "dependencies": {
     "apicache": "^1.6.3",
